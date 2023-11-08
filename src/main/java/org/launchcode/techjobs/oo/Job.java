@@ -91,19 +91,19 @@ public class Job {
             job.name="Data not Available";
         }
         if (job.employer.getValue() == null || job.getEmployer().getValue().isEmpty()) {
-            job.employer.setValue("Data not available");
+            job.employer.setValue("Data not Available");
         }
         if (job.location.getValue() == null || job.getLocation().getValue().isEmpty()) {
-            job.location.setValue("Data not available");
+            job.location.setValue("Data not Available");
         }
         if (job.positionType.getValue() == null || job.getPositionType().getValue().isEmpty()) {
-            job.positionType.setValue("Data not available");
+            job.positionType.setValue("Data not Available");
         }
         if (job.coreCompetency.getValue() == null || job.getCoreCompetency().getValue().isEmpty()) {
-            job.coreCompetency.setValue("Data not available");
+            job.coreCompetency.setValue("Data not Available");
 
         }
-        return "ID: " + job.getId() + System.lineSeparator() + "Name: " + job.getName() + System.lineSeparator() + "Employer " + job.getEmployer() + System.lineSeparator() + "Location " + job.getLocation() + System.lineSeparator() + "Position Type " + job.getPositionType() + System.lineSeparator() + "Core Competency " + job.getCoreCompetency() + System.lineSeparator();
+        return System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: " + job.getName() + System.lineSeparator() + "Employer: " + job.getEmployer() + System.lineSeparator() + "Location: " + job.getLocation() + System.lineSeparator() + "Position Type: " + job.getPositionType() + System.lineSeparator() + "Core Competency: " + job.getCoreCompetency() + System.lineSeparator();
 
     }
 }
