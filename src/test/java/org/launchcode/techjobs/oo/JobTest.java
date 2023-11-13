@@ -47,7 +47,7 @@ public class JobTest {
     public void testToStringStartsAndEndsWithNewLine(){
         Job job= new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
-        String output = Job.toString(job);
+        String output = job.toString();
 
         Assert.assertTrue(output.startsWith(System.lineSeparator()));
         Assert.assertTrue(output.endsWith(System.lineSeparator()));
@@ -60,7 +60,7 @@ public class JobTest {
 
         String expectedOutput = System.lineSeparator() + "ID: 4" + System.lineSeparator() + "Name: Product tester" + System.lineSeparator() + "Employer: ACME" + System.lineSeparator() + "Location: Desert" + System.lineSeparator() + "Position Type: Quality control" + System.lineSeparator() + "Core Competency: Persistence" + System.lineSeparator();
 
-        String actualOutput = Job.toString(job);
+        String actualOutput = job.toString();
         Assert.assertEquals(expectedOutput, actualOutput);
     }
     @Test
@@ -69,7 +69,7 @@ public class JobTest {
 
         String expectedOutput = System.lineSeparator() + "ID: 3" + System.lineSeparator() + "Name: Data not Available" + System.lineSeparator() + "Employer: Data not Available" + System.lineSeparator() + "Location: Data not Available" + System.lineSeparator() + "Position Type: Data not Available" + System.lineSeparator() + "Core Competency: Data not Available" + System.lineSeparator();
 
-        String actualOutput = Job.toString(job);
+        String actualOutput = job.toString();
         Assert.assertEquals(expectedOutput, actualOutput);
     }
     //TODO: Create your unit tests here

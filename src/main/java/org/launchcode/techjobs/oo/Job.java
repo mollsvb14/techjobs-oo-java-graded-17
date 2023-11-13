@@ -85,25 +85,25 @@ public class Job {
     }
 
 
-    public static String toString(Job job) {
+    public String toString() {
 
-        if (job.name == null || job.getName().isEmpty()) {
-            job.name="Data not Available";
+        if (name == null ||name.isEmpty()) {
+            name="Data not Available";
         }
-        if (job.employer.getValue() == null || job.getEmployer().getValue().isEmpty()) {
-            job.employer.setValue("Data not Available");
+        if (employer.getValue() == null || getEmployer().getValue().isEmpty()) {
+            employer.setValue("Data not Available");
         }
-        if (job.location.getValue() == null || job.getLocation().getValue().isEmpty()) {
-            job.location.setValue("Data not Available");
+        if (location.getValue() == null || getLocation().getValue().isEmpty()) {
+            location.setValue("Data not Available");
         }
-        if (job.positionType.getValue() == null || job.getPositionType().getValue().isEmpty()) {
-            job.positionType.setValue("Data not Available");
+        if (positionType.getValue() == null || getPositionType().getValue().isEmpty()) {
+            positionType.setValue("Data not Available");
         }
-        if (job.coreCompetency.getValue() == null || job.getCoreCompetency().getValue().isEmpty()) {
-            job.coreCompetency.setValue("Data not Available");
+        if (coreCompetency.getValue() == null || getCoreCompetency().getValue().isEmpty()) {
+            coreCompetency.setValue("Data not Available");
 
         }
-        return System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: " + job.getName() + System.lineSeparator() + "Employer: " + job.getEmployer() + System.lineSeparator() + "Location: " + job.getLocation() + System.lineSeparator() + "Position Type: " + job.getPositionType() + System.lineSeparator() + "Core Competency: " + job.getCoreCompetency() + System.lineSeparator();
+        return System.lineSeparator() + "ID: " + getId() + System.lineSeparator() + "Name: " + getName() + System.lineSeparator() + "Employer: " + getEmployer() + System.lineSeparator() + "Location: " + getLocation() + System.lineSeparator() + "Position Type: " + getPositionType() + System.lineSeparator() + "Core Competency: " + getCoreCompetency() + System.lineSeparator();
 
     }
 }
