@@ -50,7 +50,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/mollsilita/Documents/techjobs-oo-java-graded-17&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.JobTest">
+  <component name="RunManager" selected="Gradle.Tests in 'techjobs-oo-java17-graded.test'">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,7 +147,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'org.launchcode.techjobs.oo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'techjobs-oo-java17-graded.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,8 +159,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,20 +182,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.Tests in 'techjobs-oo-java17-graded.test'" />
       <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="Gradle.TestTaskFive" />
-      <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'techjobs-oo-java17-graded.test'" />
         <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699478262299</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;Tech Jobs TDD&quot;">
+      <option name="closed" value="true" />
+      <created>1699837863509</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699837863509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

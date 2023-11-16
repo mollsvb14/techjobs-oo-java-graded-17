@@ -62,12 +62,12 @@ public class Job {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Job job = (Job) o;
-        return id == job.id && Objects.equals(name, job.name) && Objects.equals(employer, job.employer) && Objects.equals(location, job.location) && Objects.equals(positionType, job.positionType) && Objects.equals(coreCompetency, job.coreCompetency);
+        return id == job.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, employer, location, positionType, coreCompetency);
+        return Objects.hash(id);
     }
 
     public Job() {
@@ -88,19 +88,19 @@ public class Job {
     public String toString() {
 
         if (name == null ||name.isEmpty()) {
-            name="Data not Available";
+            name="Data not available";
         }
         if (employer.getValue() == null || getEmployer().getValue().isEmpty()) {
-            employer.setValue("Data not Available");
+            employer.setValue("Data not available");
         }
         if (location.getValue() == null || getLocation().getValue().isEmpty()) {
-            location.setValue("Data not Available");
+            location.setValue("Data not available");
         }
         if (positionType.getValue() == null || getPositionType().getValue().isEmpty()) {
-            positionType.setValue("Data not Available");
+            positionType.setValue("Data not available");
         }
         if (coreCompetency.getValue() == null || getCoreCompetency().getValue().isEmpty()) {
-            coreCompetency.setValue("Data not Available");
+            coreCompetency.setValue("Data not available");
 
         }
         return System.lineSeparator() + "ID: " + getId() + System.lineSeparator() + "Name: " + getName() + System.lineSeparator() + "Employer: " + getEmployer() + System.lineSeparator() + "Location: " + getLocation() + System.lineSeparator() + "Position Type: " + getPositionType() + System.lineSeparator() + "Core Competency: " + getCoreCompetency() + System.lineSeparator();
